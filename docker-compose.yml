@@ -1,0 +1,16 @@
+services:
+  db:
+    image: roo-vectordb:latest 
+    environment:
+      POSTGRES_USER: rooagi 
+      POSTGRES_PASSWORD: ann 
+      POSTGRES_DB: ann 
+    volumes:
+      - ./db_data:/var/lib/postgresql/data:z
+    ports:
+      #- "5432:5432"
+      - "58432:8432"
+
+networks:
+  default:
+    name: roo-vectordb-network
