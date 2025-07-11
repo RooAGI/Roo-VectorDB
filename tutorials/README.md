@@ -92,3 +92,23 @@ You are free to choose any of the available embedding files to experiment with. 
 ### Start and follow steps of tutorial
 
 First, start the PostgreSQL server with the Roo-VectorDB extension enabled. Then launch the Jupyter server and open the [tutorial_image_search.ipynb](tutorial_image_search.ipynb) notebook. Follow the instructions step by step. In the first few steps (steps 1–2), you’ll need to provide some basic configuration information before proceeding.
+
+<br>
+
+<!-- Long Document Search -->
+## Long Document Search
+
+In this tutorial, we demonstrate how to perform long-document search using Roo-VectorDB. As an example, we treat books as long documents, and show how to run searches at different levels of granularity—such as chapters, sections, paragraphs, or the entire book.
+
+### Download segmented book data
+
+We use the [Pile](https://huggingface.co/datasets/EleutherAI/pile) dataset (specifically the *Books1* subset) as the source of data. This subset contains approximately 18,000 books, each ranging from 100,000 to 1,000,000 words. For this tutorial, we randomly sample 1,000 books from the dataset.
+Because a single book is too large to store as one record—making both storage and search inefficient—we preprocess the books using [LangChain TextSplitter](https://python.langchain.com/docs/concepts/text_splitters/). Each book is split into 1024‑token chunks with a 30% overlap between adjacent chunks. Each chunk is stored as an individual row in the database table. The preprocessed dataset can be downloaded here:
+
+1. Preprocessed Pile Books1 data file: [pile_book1.jsonl](https://rooagi8-my.sharepoint.com/:u:/g/personal/chaoma_rooagi_com/EUNiTYeTIPNKrr-NI4t-BOcB9mlh_15NIVNSIF7D75RztA?e=AecDqa) (506.5MB)
+
+Please verify the file size after downloading to ensure the download completed successfully and the file is not corrupted.
+
+### Start and follow steps of tutorial
+
+First, start the PostgreSQL server with the Roo-VectorDB extension enabled. Then launch the Jupyter server and open the [tutorial_long_document_search.ipynb](tutorial_long_document_search.ipynb) notebook. Follow the instructions step by step. In the first few steps (steps 1–2), you’ll need to provide some basic configuration information before proceeding.

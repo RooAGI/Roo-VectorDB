@@ -21,7 +21,7 @@ Roo-VectorDB is a component of the Roo-Agent Toolkit and is distributed under th
   * Shared memory architecture with a shared state for efficient, timestamp-aware data access and management.
   * Efficient memory access through optimized vectors loading and sharing strategies.
 * **Configurable Multi-threaded Query Execution**: Allows user-configurable thread counts in parallel processing.
-
+* **GPU Support** GPU acceleration will be available in the licensed version (coming soon).
 
 ## Performance
 
@@ -90,7 +90,7 @@ We provide tutorials covering popular use cases such as full-text search, image 
 
 * [Full Text Search](tutorials/README.md#full-text-search)
 * [Images Search](tutorials/README.md#image-search)
-* Long Document Search (comming soon...)
+* [Long Document Search](tutorials/README.md#long-document-search)
 
 ## Installation
 
