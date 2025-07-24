@@ -21,11 +21,7 @@ Roo-VectorDB is a component of the Roo-Agent Toolkit and is distributed under th
   * Shared memory architecture with a shared state for efficient, timestamp-aware data access and management.
   * Efficient memory access through optimized vectors loading and sharing strategies.
 * **Configurable Multi-threaded Query Execution**: Allows user-configurable thread counts in parallel processing.
-<<<<<<< HEAD
-* **GPU Support** GPU acceleration will be available in the licensed version (coming soon).
-=======
-* **GPU Support**: GPU acceleration will be available in the licensed version (coming soon).
->>>>>>> 63771ff (feat: initial commit of Roo-VectorDB v0.1)
+* **GPU Support**: GPU acceleration will be available exclusively to commercial license holders.
 
 ## Performance
 
@@ -357,8 +353,9 @@ This service enables diagnostic log collection, which is sent to telemetry.rooag
 
 ## Commercial License
 
-Use of the compiled software is governed by the ROOAGI Evaluation License, which grants a free 90-day trial with a limit of 50,000 vectors. A commercial license is required after the trial period or if the vector limit is exceeded.
-For details, please contact lw@rooagi.com or visit our website: https://rooagi.com/.
+You can start building with ROOAGI right away using the Evaluation License, which supports up to 50,000 vectors per table. When your project grows, simply upgrade to a commercial license to unlock full scalability and advanced features.
+
+For more information or to request a commercial license, visit [rooagi.com](https://rooagi.com/).
 
 
 ## Thanks
